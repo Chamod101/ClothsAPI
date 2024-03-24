@@ -23,7 +23,7 @@ const productSchema = mongoose.Schema(
             required: false,
         },
         colour: {
-            type: Number,
+            type: String,
             required: false,
         },
         size: {
@@ -31,7 +31,7 @@ const productSchema = mongoose.Schema(
             required: false,
         },
         category: {
-            type: Number,
+            type: String,
             required: false,
         }
     },
