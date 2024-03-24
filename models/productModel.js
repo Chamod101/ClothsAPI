@@ -2,6 +2,10 @@ const mongoose = require('mongoose')
 
 const productSchema = mongoose.Schema(
     {
+        id: {
+            type: Number,
+            required: true
+        },
         name: {
             type: String,
             required: true
@@ -27,7 +31,7 @@ const productSchema = mongoose.Schema(
             type: String,
             required: true,
         },
-        Colour: {
+        colour: {
             type: String,
             required: false,
         }
