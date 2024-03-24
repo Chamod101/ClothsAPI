@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const productSchema = mongoose.Schema(
     {
-        _id: {
+        id: {
             type: Number,
             required: true
         },
@@ -14,30 +14,24 @@ const productSchema = mongoose.Schema(
             type: String,
             required: true,
         },
-        quantity: {
-            type: Number,
-            required: true,
-            default: 0
-        },
         price: {
             type: Number,
             required: true,
         },
-        size: {
-            type: String,
-            required: true,
-        },
-        category: {
-            type: String,
-            required: true,
-        },
-        colour: {
+        imageURL: {
             type: String,
             required: false,
-        }
-        ,
-        image: {
-            type: String,
+        },
+        calories: {
+            type: Number,
+            required: false,
+        },
+        protein: {
+            type: Number,
+            required: false,
+        },
+        carbs: {
+            type: Number,
             required: false,
         }
     },
