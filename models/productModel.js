@@ -27,7 +27,7 @@ const productSchema = mongoose.Schema(
             required: false,
         },
         size: {
-            type: Number,
+            type: String,
             required: false,
         },
         category: {
