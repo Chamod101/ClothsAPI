@@ -22,15 +22,15 @@ const productSchema = mongoose.Schema(
             type: String,
             required: false,
         },
-        calories: {
+        colour: {
             type: Number,
             required: false,
         },
-        protein: {
+        size: {
             type: Number,
             required: false,
         },
-        carbs: {
+        category: {
             type: Number,
             required: false,
         }
